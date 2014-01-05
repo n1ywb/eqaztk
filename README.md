@@ -75,6 +75,8 @@ Windows scripts directory:
 
     C:\Program Files\QGIS Dufour\apps\qgis\python\plugins\processing\script\scripts
 
+Restart QGIS.
+
 Go to the Processing menu and display the toolbox if it's not already visible.
 
 Go to `Scripts --> User scripts`
