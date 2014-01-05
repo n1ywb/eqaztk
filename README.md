@@ -9,7 +9,7 @@ azimuthal maps using the free Quantum GIS 2.0 application.
 
 It includes the following features:
 
-* A complete QGIS 2 project
+* A complete QGIS 2 project http://www.qgis.org
 * World basemap from http://www.naturalearthdata.com/
 * Polar graticule with 5,000km & 30deg major and 2,500km & 15deg minor ticks
 * Polar graticule generation script
