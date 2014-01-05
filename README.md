@@ -5,6 +5,8 @@ Copyright 2014 by Jeffrey M. Laughlin
 This free toolkit provides an easy way to get started with equidistant
 azimuthal maps using the free Quantum GIS 2.0 application. 
 
+![An equidistant azimuthal map of the world.](example.png "Example")
+
 It includes the following features:
 
 * A complete QGIS 2 project
@@ -33,6 +35,21 @@ Go to the Settings menu and select "Custom CRS". You should see something like
 Change the `lat` and `lon` parameters to your QTH lat & lon and click OK.
 
 Click the "Refresh" button on the toolbar. The map should now be recentered.
+
+## How to print the map ##
+
+Go to `Project --> Composer manager`
+
+Expand 'New from template'
+
+Select `Specific` from the dropdown menu and click `...`
+
+Select the `print composer template.qpt` file included with the project.
+
+Click the `Add` button. You will be prompted for a name, you may leave it
+blank. Click `OK`.
+
+The new print composer window should now appear.
 
 ## How to change the base map ##
 
