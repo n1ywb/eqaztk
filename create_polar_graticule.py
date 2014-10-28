@@ -37,7 +37,7 @@ from processing.core.VectorWriter import VectorWriter
 ##buffer_segments=number 25
 ##graticule=output vector
 ##gratlables=output vector
-##crsId=string USER:100001
+##crsId=string USER:100000
 
 # When called from the python console with default args, qgis fails to convert
 # default values from strings.
