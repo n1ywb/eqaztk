@@ -16,6 +16,7 @@ It includes the following features:
 * Lat/lon graticule
 * Saved style files for base map, polar, and lat/lon graticules
 * Print composer template optimized for US Letter sized paper
+* Tested with QGIS 2.0.1-Dufour
 
 ## How to use project ##
 
@@ -23,6 +24,14 @@ Just open it in QGIS 2. It should already be in pretty good shape for most world
 cases, e.g. plotting DX QSOs.
 
 I don't care for the lat/lon graticule so it's turned off by default.
+
+### IMPORTANT NOTE ON CUSTOM CRS ###
+
+This project includes a custom CRS configured for equidistant azimuthal projection. If you have not configured any other custom CRS's, this CRS will be called 'USER:100000'. If you do have other custom CRSs you'll have to find the number in the CRS list; look for `+proj=aeqd`. You may also add it again if necessary, the full definition is:
+
+    +proj=aeqd +lat_0=44.197227 +lon_0=-72.486237 +x_0=0 +y_0=0 +a=6371000 +b=6371000 +units=m +no_defs
+
+All layers must have their CRS set to this projection, and you must also specify this projection when running the `create_polar_graticule.py` script.
 
 ## How to change map center ##
 
@@ -96,7 +105,7 @@ Be sure to save the graticule and graticule labels to permanent files, not
 temporary files, if you want to see them again the next time you run qgis.
 
 For both of the new layers, go into the Properties, and set the CRS to
-'USER:100001'. Load the style files included in the project and customize as
+'USER:100000'. Load the style files included in the project and customize as
 desired.
 
 ## License ##
