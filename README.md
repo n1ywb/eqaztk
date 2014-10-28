@@ -31,6 +31,8 @@ This project includes a custom CRS configured for equidistant azimuthal projecti
 
     +proj=aeqd +lat_0=44.197227 +lon_0=-72.486237 +x_0=0 +y_0=0 +a=6371000 +b=6371000 +units=m +no_defs
 
+Change the `lat` and `lon` parameters to your QTH lat & lon.
+
 All layers must have their CRS set to this projection, and you must also specify this projection when running the `create_polar_graticule.py` script.
 
 ## How to change map center ##
